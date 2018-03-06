@@ -18,6 +18,7 @@ namespace bfk
     {
         public static void bfk_join(string pfad, string datei1, string datei2, string datei3)
         {
+
             try
             {
                 File.Copy(datei1, datei3, true);

@@ -23,6 +23,7 @@ namespace bfk
             while (i < files.Length)
             {
                 Console.WriteLine(files[i]);
+
                 i++;
             }
         }

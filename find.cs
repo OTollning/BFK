@@ -23,11 +23,8 @@ namespace bfk
                 if ((string.Compare(file.Extension, "." + fileformat) == 0))
                 {
                     search_file(file, searchstring);
-
                     // safe_search_file(file, searchstring);
-
                 }
-
             }
             Console.WriteLine("Suche abgeschlossen");
         }
@@ -40,7 +37,6 @@ namespace bfk
                 Console.WriteLine(file.Name);
             }
         }
-
         private static void search_file(FileInfo file, String searchtext)
         {
             string text = file.OpenText().ReadToEnd();

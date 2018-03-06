@@ -22,7 +22,6 @@ namespace bfk
             }
             Console.WriteLine("Umbennen abgeschlossen");
         }
-
         private static void rename_file(FileInfo file, String prefix)
         {
             System.IO.File.Move(file.FullName, file.DirectoryName + "\\" + prefix + file.Name);

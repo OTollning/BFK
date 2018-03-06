@@ -183,7 +183,6 @@ namespace bfk
         }
 
         /****************************************************************/
-
         /*
          *  Gibt die FileInfodatei aus dem übergebenen String Namen zurück, oder null wenn nicht vorhanden.
          */
