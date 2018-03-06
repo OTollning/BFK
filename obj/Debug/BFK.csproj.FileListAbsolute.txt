@@ -1,0 +1,6 @@
+D:\Projekte\AWE\BFK\BFK\bin\Debug\BFK.exe.config
+D:\Projekte\AWE\BFK\BFK\bin\Debug\BFK.exe
+D:\Projekte\AWE\BFK\BFK\bin\Debug\BFK.pdb
+D:\Projekte\AWE\BFK\BFK\obj\Debug\BFK.csprojResolveAssemblyReference.cache
+D:\Projekte\AWE\BFK\BFK\obj\Debug\BFK.exe
+D:\Projekte\AWE\BFK\BFK\obj\Debug\BFK.pdb
