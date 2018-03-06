@@ -22,12 +22,10 @@ namespace bfk
                 foreach (string alt in Directory.GetDirectories(pfad, "*",
                     SearchOption.AllDirectories))
                     Directory.CreateDirectory(alt.Replace(pfad, backup));
-
                 //Kopiere alle Dateien und ersetze diese falls nötig
                 foreach (string neu in Directory.GetFiles(pfad, "*.*",
                     SearchOption.AllDirectories))
                     File.Copy(neu, neu.Replace(pfad, backup), true);
-
                 //Backupordner erstellen
                 Directory.CreateDirectory(backup);
             }

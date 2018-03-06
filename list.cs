@@ -26,6 +26,7 @@ namespace bfk
                 {
                     Console.WriteLine(files[i]);
                 }
+
                 i++;
             }
         }

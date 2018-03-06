@@ -23,17 +23,13 @@ namespace bfk
             string newInhalt = safe_replace(inhalt, Search_string, replace_string);
             sw.Write(newInhalt);
             sw.Flush();
-
         }
-
         private static string safe_replace(string inhalt, string searchstring, string replacestring)
         {
             string pattern = string.Format(@"\b{0}\b", searchstring);
             string newTxt = Regex.Replace(inhalt, pattern, replacestring, RegexOptions.IgnoreCase);
             return newTxt;
         }
-
-
         private static string get_text(FileInfo file)
         {
             StreamReader sr = new StreamReader(file.FullName);

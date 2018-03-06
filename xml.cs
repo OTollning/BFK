@@ -26,7 +26,6 @@ namespace bfk
             writer.WriteStartElement("dir");
             writer.WriteAttributeString("name", Verzeichnis.Name);
 
-
             FileInfo[] files = Verzeichnis.GetFiles();
             foreach (FileInfo file in files)
             { printElement(writer, file); }
@@ -34,14 +33,11 @@ namespace bfk
             foreach (DirectoryInfo dir in dirs)
             { printDir(writer, dir); }
 
-
             writer.WriteEndElement();
 
             writer.Close();
             Console.WriteLine("XML-Datei abgeschlossen");
-
         }
-
         private static void printDir(XmlTextWriter writer, DirectoryInfo dir)
         {
             writer.WriteStartElement("entry");

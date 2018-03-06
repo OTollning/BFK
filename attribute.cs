@@ -19,16 +19,12 @@ namespace bfk
             {
                 FileAttributes files = File.GetAttributes(pfad + "\\" + datei);
                 string rhs = "";
-
                 if ((files & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
                     rhs += "R";
-
                 if ((files & FileAttributes.Hidden) == FileAttributes.Hidden)
                     rhs += "H";
-
                 if ((files & FileAttributes.System) == FileAttributes.System)
                     rhs += "S";
-
                 Console.WriteLine(pfad + "\\" + datei + " " + rhs);
             }
             catch (FileNotFoundException)
